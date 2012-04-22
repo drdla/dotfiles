@@ -1,0 +1,2 @@
+# list the last 100 history entries
+alias tailhist="history | tail -n 100"
