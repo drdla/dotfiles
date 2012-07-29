@@ -2,12 +2,7 @@
 # General UI/UX                                                               #
 ###############################################################################
 
-# Set computer name (as done via System Preferences → Sharing)
-scutil --set ComputerName "Dominiks MacBook Pro"
-scutil --set HostName "Dominiks MacBook Pro"
-scutil --set LocalHostName "Dominiks-MacBook-Pro"
-
-# Menu bar: ensable transparency
+# Menu bar: enable transparency
 defaults write NSGlobalDomain AppleEnableMenuBarTransparency -bool true
 
 # Menu bar: show remaining battery time (on pre-10.8); hide percentage
@@ -181,8 +176,8 @@ chflags nohidden ~/Library
 # Dock                                                                        #
 ###############################################################################
 
-# Set the icon size of Dock items to 36 pixels
-defaults write com.apple.dock tilesize -int 36
+# Set the icon size of Dock items to 54 pixels
+defaults write com.apple.dock tilesize -int 54
 
 # Enable spring loading for all Dock items
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
@@ -305,8 +300,8 @@ defaults write com.apple.Terminal "Startup Window Settings" -string "Homebrew"
 
 # Enable “focus follows mouse” for Terminal.app and all X11 apps
 # This means you can hover over a window and start typing in it without clicking first
-#defaults write com.apple.terminal FocusFollowsMouse -bool true
-#defaults write org.x.X11 wm_ffm -bool true
+defaults write com.apple.terminal FocusFollowsMouse -bool true
+defaults write org.x.X11 wm_ffm -bool true
 
 ###############################################################################
 # Time Machine                                                                #
